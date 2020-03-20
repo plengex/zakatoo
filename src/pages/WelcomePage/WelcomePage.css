@@ -1,0 +1,16 @@
+.welcomeTitle {
+    font-size: calc(10px + 2vmin);
+}
+
+.welcomeSubTitle {
+    margin-top: 4px;
+    margin-bottom: 125px;
+}
+
+.welcomeNextLink {
+    padding: 10px 40px;
+    margin: 10px;
+    text-decoration: none;
+    background: #f0f0ff;
+    border-radius: 4px;
+}

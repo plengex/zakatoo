@@ -1,0 +1,59 @@
+
+.buttonActive {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    height: 48px;
+    line-height: 18px;
+    width: 100%;
+    font-weight: 800;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    text-indent: initial;
+    border-radius: 8px;
+    outline: none;
+    overflow: hidden;
+    padding: 0px 16px;
+    transition: background 0.8s ease 0s;
+    background: radial-gradient(circle, transparent 1%, rgb(3, 172, 14) 1%) center center / 15000% rgb(3, 172, 14);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.disable {
+    color: rgb(49, 53, 59);
+    font-size: 14px;
+    height: 48px;
+    line-height: 18px;
+    width: 100%;
+    font-weight: 800;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    text-indent: initial;
+    border-radius: 8px;
+    outline: none;
+    overflow: hidden;
+    padding: 0px 16px;
+    transition: background 0.8s ease 0s;
+    background: radial-gradient(circle, transparent 1%, rgb(229, 231, 233) 1%) center center / 15000% rgb(229, 231, 233);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.disable:hover {
+    cursor: not-allowed;
+}
+
+.buttonTitle {
+    opacity: 1;
+    position: relative;
+    bottom: 0px;
+    transition: opacity 0.3s linear 0s, bottom 0.3s linear 0s;
+}

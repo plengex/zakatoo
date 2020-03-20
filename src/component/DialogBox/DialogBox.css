@@ -1,0 +1,93 @@
+/* modal-box */
+.overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(49, 53, 59);
+    z-index: 100;
+    opacity: 0.78;
+    overflow: hidden;
+    transition: opacity 0.3s cubic-bezier(0, 0, 0.3, 1) 0s, z-index 0.1s linear 0s, visibility 0.3s linear 0s;
+}
+
+.dialogContainer {
+    position: fixed;
+    top: 50%;
+    width: 600px;
+    opacity: 1;
+    will-change: transform;
+    transform: translateY(-50%);
+    z-index: 101;
+    transition: opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s, z-index 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.dialog {
+    display: block;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0px;
+    text-align: center;
+    margin: 16px;
+    padding: 24px 16px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dialog h2 {
+    display: block;
+    position: relative;
+    font-weight: 800;
+    font-family: "Nunito Sans", -apple-system, sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(49, 53, 59, 0.96);
+    text-decoration: initial;
+    margin: 0px 0px 16px;
+}
+
+.dialog p {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(49, 53, 59, 0.68);
+    text-decoration: initial;
+    margin: 0px 0px 32px;
+}
+
+.closeButtonWrap {
+    margin-top: 12px;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    -webkit-box-align: inherit;
+    align-items: inherit;
+}
+
+.closeButton {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    height: 40px;
+    line-height: 18px;
+    width: 100%;
+    font-weight: 800;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    text-indent: initial;
+    border-radius: 8px;
+    outline: none;
+    overflow: hidden;
+    padding: 0px 16px;
+    transition: background 0.8s ease 0s;
+    background: radial-gradient(circle, transparent 1%, rgb(3, 172, 14) 1%) center center / 15000% rgb(3, 172, 14);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}

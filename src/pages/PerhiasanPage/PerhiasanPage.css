@@ -1,0 +1,177 @@
+.navbar {
+    position: fixed;
+    width: 600px;
+    top: 0;
+    z-index: 99;
+}
+
+.navbarContainer {
+    height: 52px;
+    position: relative;
+}
+
+.navbarWrapper {
+    position: relative;
+    z-index: 40;
+}
+
+.unfNavbar {
+    width: 100%;
+    height: 52px;
+    color: rgba(49, 53, 59, 0.96);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px 0px;
+    transition: background-color 0.24s ease 0s;
+}
+
+.navbarIcon {
+    width: 52px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.navbarIcon::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-size: 24px;
+    background-image: url('../../assets/images/back-icon.png');
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: auto;
+}
+
+.navbarTitle {
+    text-align: left;
+    min-width: 0px;
+    padding-right: 0px;
+    flex: 1 1 0%;
+}
+
+.navbarTitle h1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1.21429rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.containerForm {
+    display: block;
+    margin-top: 52px !important;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0px;
+    margin: 0px;
+    padding: 16px;
+    padding-top: 24px;
+    border-radius: initial;
+    overflow: hidden;
+}
+
+.formInput {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.inputLabel {
+    font-size: 14px;
+    transform: none;
+    color: rgba(49, 53, 59, 0.68);
+}
+
+.input {
+    color: rgb(49, 53, 59);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(229, 231, 233);
+    border-bottom-style: solid;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    transition: border-bottom-style 280ms ease 0s;
+}
+
+.inputForm {
+    width: 100%;
+    height: 26px;
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 0px;
+    flex: 1 1 0%;
+    outline: none;
+    padding: 3px 0px;
+    margin: 0px;
+    transition: color 280ms ease 0s;
+}
+
+.hitungContainer {
+    display: block;
+    position: relative;
+    margin-top: 52px !important;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0px;
+    margin: 0px;
+    padding: 16px;
+    border-radius: initial;
+    overflow: hidden;
+}
+
+.hitungButton {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    height: 48px;
+    line-height: 18px;
+    width: 100%;
+    font-weight: 800;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    text-indent: initial;
+    border-radius: 8px;
+    outline: none;
+    overflow: hidden;
+    padding: 0px 16px;
+    transition: background 0.8s ease 0s;
+    background: radial-gradient(circle, transparent 1%, rgb(3, 172, 14) 1%) center center / 15000% rgb(3, 172, 14);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.buttonTitle {
+    opacity: 1;
+    position: relative;
+    bottom: 0px;
+    transition: opacity 0.3s linear 0s, bottom 0.3s linear 0s;
+}

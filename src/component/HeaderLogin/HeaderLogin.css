@@ -1,0 +1,77 @@
+.headerContainer {
+    margin-top: 32px;
+    display: flex;
+    position: relative;
+    margin-bottom: 26px;
+    align-items: flex-end;
+    background: linear-gradient(to right bottom, rgb(135, 213, 139), rgb(143, 230, 236) 88%);
+}
+
+.headerCard {
+    display: flex;
+    top: -24px;
+    width: calc(100% - 32px);
+    margin: 0px 16px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0px;
+    padding: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.headerCard a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.headerAkun {
+    text-align: center;
+    padding-right: 16px;
+    margin-right: 16px;
+    flex: 1 1 0%;
+    border-right: 1px solid rgb(241, 241, 241);
+}
+
+.headerAkun::before {
+    content: "";
+    background-image: url('../../assets/images/logout.png');
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    margin-bottom: 8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.headerHistori {
+    text-align: center;
+    padding-right: 0px;
+    margin-right: 0px;
+    flex: 1 1 0%;
+    border-right: 0px;
+}
+
+.headerHistori::before {
+    content: "";
+    background-image: url('../../assets/images/histori.png');
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    margin-bottom: 8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.headerTitle {
+    color: rgb(66, 181, 73);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.cursor {
+    cursor: pointer;
+}
